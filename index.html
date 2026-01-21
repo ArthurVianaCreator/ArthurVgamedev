@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Viana | Game Dev Portfolio</title>
+ 
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <img src="icon.png" alt="Icon" class="nav-icon">
+                <span>Arthur Viana</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://arthurviana.itch.io/space-oddity" target="_blank">Space Oddity</a></li>
+                <li><a href="https://arthurviana.itch.io/" target="_blank">Itch.io</a></li>
+                <li><a href="https://www.youtube.com/@ArthurVOficial" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="card-grid">
+            
+            <div class="card featured animate-in">
+                <div class="demo-badge">DEMO VERSION</div>
+                <div class="card-image">
+                    <img src="spaceoddity.png" alt="Space Oddity">
+                </div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <h3>Space Oddity</h3>
+                        <span class="quote">"No ground control this time, only survival"</span>
+                    </div>
+                    <p>A 2D pixel art survival arena shoot ’em up. Control a lone astronaut stranded in hostile territory. Survive waves and upgrade your gear.</p>
+                    
+                    <div class="button-group">
+                        <a href="https://arthurviana.itch.io/space-oddity" target="_blank" class="btn-learn">Play Now</a>
+                        <a href="https://forms.gle/4u9cc1NAaFSzzXnz6" target="_blank" class="btn-secondary">Feedback</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card animate-in" style="animation-delay: 0.2s;">
+                <div class="card-image red-bg">
+                    <img src="https://static.itch.io/images/itchio-textless-white.svg" alt="Itch.io">
+                </div>
+                <div class="card-body">
+                    <h3>My Projects</h3>
+                    <p>Access my full library of indie games, prototypes, and jam entries on my official Itch.io profile.</p>
+                    <a href="https://arthurviana.itch.io/" target="_blank" class="btn-learn">View Portfolio</a>
+                </div>
+            </div>
+
+            <div class="card animate-in" style="animation-delay: 0.4s;">
+                <div class="card-image">
+                    <img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="YouTube">
+                </div>
+                <div class="card-body">
+                    <h3>YouTube</h3>
+                    <p>Follow my journey as a game developer. Devlogs, tutorials, and showcases of my latest creations.</p>
+                    <a href="https://www.youtube.com/@ArthurVOficial" target="_blank" class="btn-learn">Subscribe</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Arthur Viana.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
