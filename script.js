@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "btn-view": "View Portfolio",
             "card3-title": "YouTube",
             "card3-desc": "Follow my journey as a game developer. Devlogs, tutorials, and showcases of my latest creations.",
-            "btn-sub": "Subscribe"
+            "btn-sub": "Subscribe",
+            "card4-title": "Instagram",
+            "card4-desc": "Behind the scenes, art previews, and daily updates on my game development process.",
+            "btn-insta": "Follow Me"
         },
         pt: {
             "nav-home": "Início",
@@ -27,7 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "btn-view": "Ver Portfólio",
             "card3-title": "YouTube",
             "card3-desc": "Acompanhe minha jornada como dev. Devlogs, tutoriais e apresentações das minhas últimas criações.",
-            "btn-sub": "Inscrever-se"
+            "btn-sub": "Inscrever-se",
+            "card4-title": "Instagram",
+            "card4-desc": "Bastidores, prévias de arte e atualizações diárias sobre o processo de desenvolvimento dos meus jogos.",
+            "btn-insta": "Seguir"
         }
     };
 
