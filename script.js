@@ -1,68 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const translations = {
-        en: {
-            "nav-home": "Home",
-            "badge-key": "KEY REQUIRED",
-            "card1-quote": '"No ground control this time, only survival"',
-            "card1-desc": "A 2D pixel art survival arena shoot ’em up. Control a lone astronaut stranded in hostile territory. Survive waves and upgrade your gear.",
-            "btn-play": "Play Now",
-            "btn-feedback": "Feedback",
-            "card2-title": "My Projects",
-            "card2-desc": "Access my full library of indie games, prototypes, and jam entries on my official Itch.io profile.",
-            "btn-view": "View Portfolio",
-            "card3-title": "YouTube",
-            "card3-desc": "Follow my journey as a game developer. Devlogs, tutorials, and showcases of my latest creations.",
-            "btn-sub": "Subscribe",
-            "card4-title": "Instagram",
-            "card4-desc": "Behind the scenes, art previews, and daily updates on my game development process.",
-            "btn-insta": "Follow Me"
-        },
-        pt: {
-            "nav-home": "Início",
-            "badge-key": "CHAVE NECESSÁRIA",
-            "card1-quote": '"Sem controle de solo desta vez, apenas sobrevivência"',
-            "card1-desc": "Um shooter de arena e sobrevivência 2D em pixel art. Controle um astronauta solitário em território hostil. Sobreviva a hordas e melhore seu equipamento.",
-            "btn-play": "Jogar Agora",
-            "btn-feedback": "Feedback",
-            "card2-title": "Meus Projetos",
-            "card2-desc": "Acesse minha biblioteca completa de jogos, protótipos e game jams no meu perfil oficial do Itch.io.",
-            "btn-view": "Ver Portfólio",
-            "card3-title": "YouTube",
-            "card3-desc": "Acompanhe minha jornada como dev. Devlogs, tutoriais e apresentações das minhas últimas criações.",
-            "btn-sub": "Inscrever-se",
-            "card4-title": "Instagram",
-            "card4-desc": "Bastidores, prévias de arte e atualizações diárias sobre o processo de desenvolvimento dos meus jogos.",
-            "btn-insta": "Seguir"
-        }
-    };
-
-    let currentLang = localStorage.getItem('language') || 'en';
-
-    function updateLanguage() {
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            if (translations[currentLang][key]) {
-                element.textContent = translations[currentLang][key];
-            }
-        });
-        localStorage.setItem('language', currentLang);
-    }
-
-    document.getElementById('lang-toggle').addEventListener('click', () => {
-        currentLang = currentLang === 'en' ? 'pt' : 'en';
-        updateLanguage();
-    });
-
-    updateLanguage();
-
+    // Atualiza o ano no rodapé
     const yearSpan = document.getElementById('year');
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
+    // Segurança para links externos
     document.querySelectorAll('a[target="_blank"]').forEach(link => {
         link.setAttribute('rel', 'noopener noreferrer');
     });
 
+    // --- ANIMAÇÃO DO FUNDO (CANVAS) ---
     const canvas = document.getElementById('bg-canvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
