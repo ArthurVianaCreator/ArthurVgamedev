@@ -7,9 +7,9 @@
     --accent-hover: #cc2b2b;
     --border-color: #222;
     --insta-pink: #6b064b;
+    --discord-blurple: #788fdc;
 }
 
-/* Reset básico */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -152,6 +152,9 @@ body {
 
 .card-image.insta-bg { background-color: var(--insta-pink); }
 .card-image.insta-bg img { width: 35%; height: auto; object-fit: contain; }
+
+.card-image.discord-bg { background-color: var(--discord-blurple); }
+.card-image.discord-bg img { width: 40%; height: auto; object-fit: contain; }
 
 .card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
 .card-body h3 { font-family: 'Press Start 2P', cursive; font-size: 14px; color: var(--accent-red); margin-bottom: 8px; }
